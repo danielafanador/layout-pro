@@ -1,11 +1,15 @@
 * {box-sizing: border-box; margin: 0; padding: 0}
 
-main {width: 100vw; height: 100vh; background-color: azure;display: flex;align-items: center;}
+main {width: 100vw; 
+    height: 100vh; 
+    background-color: azure;
+    /* display: flex; */
+    align-items: center;}
 
-.caja-madre {position: relative;}
-
+/* CAJA GRANDE */
 .caja-1 {
-    position:absolute;
+    position:relative;
+    top: 90px;
     width: 800px;
     height: 600px;
     background-color:darkslategray;   
@@ -14,13 +18,31 @@ main {width: 100vw; height: 100vh; background-color: azure;display: flex;align-i
     z-index: 0;
 }
 
-
+/* CAJA CHICA */
 .caja-2 {
-    position:absolute;
+    position:relative;
+    bottom: 550px;
     width: 200px;
     height: 75px;
     background-color:deeppink;
     margin: 0 auto;   
     border-radius: 15px;
     z-index: 1;
+}
+
+/* IMAGEN */
+.imagen {
+    position: relative;
+    left: 144px;
+    top: 104px;
+    margin: 0 auto;   
+}
+
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    position:relative;
+    top: 22px;
 }

@@ -1,0 +1,25 @@
+* {box-sizing: border-box; margin: 0; padding: 0}
+
+main {width: 100vw; height: 100vh; background-color: azure;display: flex;align-items: center;}
+
+.caja-madre {position: relative;}
+
+.caja-1 {
+    position:absolute;
+    width: 800px;
+    height: 600px;
+    background-color:darkslategray;   
+    margin: 0 auto;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.caja-2 {
+    position:absolute;
+    width: 200px;
+    height: 75px;
+    background-color:deeppink;
+    margin: 0 auto;   
+    border-radius: 15px;
+    z-index: 1;
+}
